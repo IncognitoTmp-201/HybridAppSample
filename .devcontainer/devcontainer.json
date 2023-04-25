@@ -1,12 +1,5 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "extensions": ["ms-vscode-remote.remote-containers"],
-  "remoteUser": "codespace",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "workspaceMount": "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-  "runArgs": ["--privileged", "-v", "${PWD}:${PWD}", "-w", "${PWD}"],
   "features": {
   }
 }
